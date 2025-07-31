@@ -13,8 +13,8 @@ public:
                 next_ors.insert(x | y);
             }
 
-            result_ors.insert(next_ors.begin(),next_ors.end());
             current_ors = next_ors;
+            result_ors.insert(next_ors.begin(),next_ors.end());
         }
         
         return result_ors.size();
