@@ -1,8 +1,7 @@
 class Solution {
 public:
     int subarrayBitwiseORs(vector<int>& arr) {
-        int n = arr.size();
-        if(n == 1 ) return 1;
+        
 
         unordered_set<int> result_ors;
         unordered_set<int> current_ors;
